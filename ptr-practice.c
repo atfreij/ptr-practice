@@ -16,6 +16,10 @@ int main() {
   printf("stkptr address: %p\n", (void *)&stkptr);
   printf("*stkptr: %d\n", *stkptr);
 
+  *stkptr = 50;
+  printf("*stkptr (re-written): %d\n", *stkptr);
+  printf("stkptr (re-written): %p\n", stkptr);
+
   return 0;
 
 }
